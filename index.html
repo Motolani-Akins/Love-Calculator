@@ -1,45 +1,56 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
 
-    <title>Love Calculator</title>
-  </head>
-  <body class="bg-dark">
-    <div class="container mt-5">
-        <div  class="container col mt-5">
-       <h1 id="head-text" class="text-light text-center">Welcome to Molecule's Love Calculator</h1>
-       <h3 id="second-head" class="text-light text-center mt-5">Your being here shows that you have a love interest. I am here to give you a probability that may or may not push you to own your feelings. 
-           Fill in the form below and lets get started.
-       </h3>
-    </div>   
-    
-        <form class="mt-5">
-            <div class="row">
-              <div class="col">
-                <input id="client-name" type="text" class="form-control" placeholder="Enter your name">
-              </div>
-              <div class="col">
-                <input id="love-interest" type="text" class="form-control" placeholder="Enter name of love interest">
-              </div>
-            </div>
-            <button type="button" class="btn btn-danger btn-lg btn-block mt-5">Calculate <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
-              </svg></button>
-          </form>
-    <!-- ---------------------------Loader--------------------------- -->
-       <!-- <div class="text-center mt-5 pt-5" id="loading">
-           <img src="/img/197-1970959_whf-logo-spinner-to-indicate-loading-transparent-loading-heart-gif.gif" alt="loading">
-       </div> -->
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous" />
+  <title>Love Calculator</title>
+</head>
+
+<body class="bg-dark">
+  <div class="container mt-5">
+    <div class="container col mt-5">
+      <h1 id="head-text" class="text-light text-center">
+        Welcome to Molecule's Love Calculator
+      </h1>
+      <h3 id="second-head" class="text-light text-center mt-5">
+        Your being here shows that you have a love interest. I am here to give
+        you a probability that may or may not push you to own your feelings.
+        Fill in the form below and lets get started.
+      </h3>
     </div>
 
+    <form class="mt-5">
+      <div class="row">
+        <div class="col">
+          <input id="client-name" type="text" class="form-control" placeholder="Enter your name" />
+        </div>
+        <div class="col">
+          <input id="love-interest" type="text" class="form-control" placeholder="Enter name of love interest" />
+        </div>
+      </div>
+      <a href="/results.html"><button type="button" id="calculate-btn" class="btn btn-danger btn-lg btn-block mt-5">
+          Calculate
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill"
+            viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+          </svg></button></a>
+    </form>
+    <!-- ---------------------------Loader--------------------------- -->
+    <!-- <div class="text-center mt-5 pt-5" id="loading">
+           <img src="/img/197-1970959_whf-logo-spinner-to-indicate-loading-transparent-loading-heart-gif.gif" alt="loading">
+       </div> -->
+  </div>
 
-  
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
-    <script src="index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+    crossorigin="anonymous"></script>
+  <script src="index.js"></script>
+</body>
 
-  </body>
 </html>
