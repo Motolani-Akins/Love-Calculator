@@ -5,14 +5,15 @@ let result = document.getElementById('result');
 
 let loveScore;
 
+console.log(window);
+
 document.getElementById('calculate-btn').addEventListener('click', function(e){
     let x = clientName.value.length; 
     let y = loveInterest.value.length;
     let z = ((x + y)*5)/4 ; 
 
 
-window.location.href=`/results.html?percent=${z}`;
-
+window.location.href=`/results.html?percent=${z}`
    
 });
 
@@ -22,3 +23,4 @@ const params = new Proxy(new URLSearchParams(window.location.search), {
   });
 
   result.innerHTML = `${params.percent}%`
+ 
